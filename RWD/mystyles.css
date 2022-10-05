@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;     
+}
+/*These styles belongs to the navigation bar*/
+.main-nav{
+    background-image: linear-gradient(to left, rgb(204, 242, 251),
+     rgb(0, 94, 183));
+    height: 90px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.nav{
+    border-bottom: 1px solid black;
+    text-align: right;
+    line-height: 70px;        
+}
+.logos{
+    color: white;
+    text-align: center;
+    line-height: 80px; 
+    text-shadow: 2px 2px 6px #ffffff;
+}
+.menu{    
+    text-align: center;
+    margin: 0 30px 0 0;
+    line-height: 90px;
+    width: 100%;
+    }
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    background-color: blue;
+    border-radius: 10px;    
+    margin: 0 5px;
+    font-weight: 600;
+}
+.menu a:active{
+    color: orange;
+}
+.menu a:hover{
+    height: 40px;
+    width: auto;
+    background-color: white;
+    color: blue;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    line-height: 90px;
+    display: none;
+}
+#toggle{
+ display: none;
+}
+/*These styles belongs to the body of our page*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: auto;
+    background-color: gray;
+
+   }
+   .left{
+    background-color: blue;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 16px;
+
+   }
+   .maindiv{
+    background-color: #f5f5f5;
+    padding: 16px;
+
+   }
+   img{
+    height: 400px;
+    width: 100%;
+      }
+    input{
+    width: 100%;
+    height: 20px;
+          }
+   textarea{
+    width: 100%;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-image: linear-gradient(to left, rgb(204, 242, 251),
+     rgb(0, 94, 183));
+  }
+  
+  .footer > div {
+    background-color: transparent;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .footer > div a{
+    color: black;
+    margin-right: 8px;
+  }
+  .footer > div a:hover{
+    color: white;
+    transition: 0.4s;
+  }
+.info{
+   font-size: 15px;
+   color: white;     
+}
+#icon{
+    height: 60px;
+    width: 75px;
+}
+.links{
+    display: inline;
+}
+/* Here is phone's interface */
+@media only screen and (max-width:600px){
+    label{
+     display: block;
+     color: white;
+     cursor: pointer;
+    }
+    .logos{
+        font-size: 8px;
+        color: white;
+    }
+    .left{
+        font-size: 16px;
+    }
+    .menu{
+        position: absolute;
+        top: 80px;
+        background-color: transparent;
+        color: white;
+        display: none;
+        text-align: center;
+        width: 80%;
+       }
+       .menu a{
+        background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+        display: block;
+        border-bottom: 1px solid skyblue;
+
+       }
+       .menu a:hover{
+        background-color: white;
+        color: black;
+       }
+       #toggle:checked + .menu{
+        display: block;
+        }
+       #toggle{
+     display: block;
+    }
+    .grid-container{
+        grid-template-columns: 100%;
+        }
+        .footer{
+            grid-template-columns: 100%;
+            height: auto;
+        }
+    }
+    /* Here is tablet's interface */
+    @media only screen and (max-width:768px){
+        .left{
+            padding: 25px;
+            font-size: 20px;
+            color: black;
+            background-color: skyblue;
+        }
+        .grid-container{
+            grid-template-columns: 100%;
+            }
+            .footer{
+                grid-template-columns: 100%;
+                height: auto;
+            }
+
+    }
